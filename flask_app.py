@@ -5,11 +5,11 @@ import pickle
 app = Flask(__name__)
 
 # Load your models and preprocessor
-decision_tree = pickle.load(open('decisiontreeregressor.pkl', 'rb'))
-linear_regression = pickle.load(open('regression_model (6).pkl', 'rb'))
-lasso = pickle.load(open('final_lasso (5).pkl', 'rb'))
-ridge = pickle.load(open('final_ridge (4).pkl', 'rb'))
-preprocessor = pickle.load(open('preprocessor.pkl', 'rb'))
+decision_tree = pickle.load(open('models/decisiontreeregressor.pkl', 'rb'))
+linear_regression = pickle.load(open('models/regression_model (6).pkl', 'rb'))
+lasso = pickle.load(open('models/final_lasso (5).pkl', 'rb'))
+ridge = pickle.load(open('models/final_ridge (4).pkl', 'rb'))
+preprocessor = pickle.load(open('models/preprocessor.pkl', 'rb'))
 
 @app.route('/')
 def index():
