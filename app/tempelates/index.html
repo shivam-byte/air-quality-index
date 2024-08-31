@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Prediction</title>
+</head>
+<body>
+    <h1>Air Quality Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="City">City:</label><br>
+        <input type="text" id="City" name="City" required><br><br>
+        <label for="PM2.5">PM2.5:</label><br>
+        <input type="number" id="PM2.5" name="PM2.5" required><br><br>
+        <label for="PM10">PM10:</label><br>
+        <input type="number" id="PM10" name="PM10" required><br><br>
+        <label for="NO">NO:</label><br>
+        <input type="number" id="NO" name="NO" required><br><br>
+        <label for="NO2">NO2:</label><br>
+        <input type="number" id="NO2" name="NO2" required><br><br>
+        <label for="NOx">NOx:</label><br>
+        <input type="number" id="NOx" name="NOx" required><br><br>
+        <label for="NH3">NH3:</label><br>
+        <input type="number" id="NH3" name="NH3" required><br><br>
+        <label for="CO">CO:</label><br>
+        <input type="number" id="CO" name="CO" required><br><br>
+        <label for="SO2">SO2:</label><br>
+        <input type="number" id="SO2" name="SO2" required><br><br>
+        <label for="O3">O3:</label><br>
+        <input type="number" id="O3" name="O3" required><br><br>
+        <label for="Benzene">Benzene:</label><br>
+        <input type="number" id="Benzene" name="Benzene" required><br><br>
+        <label for="Toluene">Toluene:</label><br>
+        <input type="number" id="Toluene" name="Toluene" required><br><br>
+        <label for="Xylene">Xylene:</label><br>
+        <input type="number" id="Xylene" name="Xylene" required><br><br>
+        <input type="submit" value="Predict AQI">
+    </form>
+</body>
+</html>
