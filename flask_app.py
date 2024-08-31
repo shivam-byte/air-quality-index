@@ -8,7 +8,7 @@ app = Flask(__name__)
 try:
     with open('models/decisiontreeregressor.pkl', 'rb') as f:
         decision_tree_regressor = pickle.load(f)
-    with open('models/linearregression.pkl', 'rb') as f:
+    with open('models/linear_regression.pkl', 'rb') as f:
         linear_regression = pickle.load(f)
     with open('models/lasso.pkl', 'rb') as f:
         lasso = pickle.load(f)
